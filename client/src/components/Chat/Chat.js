@@ -17,7 +17,7 @@ const Chat = ({ location }) => {
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'https://git.heroku.com/quiet-cliffs-01083.git';
+    const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search);
